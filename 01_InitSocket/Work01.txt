@@ -1,0 +1,19 @@
+
+ㅇ교재 실습 2-1 InitSocket.cpp를 MAKEWORD를 사용하지 않고 동작하도록 수정하고, 이를 확인하기 위해 wsa 변수의 필드 중 처음 네 개(wVersion, wHighVersion, szDescription, szSystemStatus)를 화면에 출력하도록 코드를 수정하시오.
+
+
+-> MAKEWORD 함수
+
+WORD MAKEWORD(
+    BYTE bLow,
+    BYTE bHigh
+);
+ 
+
+
+
+WORD MyWord (BYTE lowByte, BYTE highByte) {
+	return ((WORD)highByte << 8) | lowByte;
+}
+
+-> lowByte와 highByte라는 두 개의 8비트 바이트 값을 받아서 하위 8비트 (lowByte)와 상위 8비트 (highByte)를 조합하여 하나의 16비트 워드 (WORD)를 반환. 비트 시프트 연산자 (<<)를 사용하여 상위 8비트를 왼쪽으로 시프트한 다음 |연산자로 하위 8비트와 결합.
