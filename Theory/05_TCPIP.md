@@ -23,4 +23,4 @@
   
   ![image](https://github.com/MiyeongEom/NetworkGameProgramming/assets/112458035/d22b025e-4009-4760-94f3-b70a94055a24)
   
-  [소스코드](https://github.com/MiyeongEom/NetworkGameProgramming/tree/main/Example/Network06_TcpIp/%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0)https://github.com/MiyeongEom/NetworkGameProgramming/tree/main/Example/Network06_TcpIp/%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0)  
+  [기본코드](https://github.com/MiyeongEom/NetworkGameProgramming/tree/main/Example/Network06_TcpIp/%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0)
