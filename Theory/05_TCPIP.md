@@ -31,6 +31,7 @@
  * 원격 IP주소와 원 포트 번호 : 서버 또는 클라이언트가 통신하는 상대의 주소 의미
  ![image](https://github.com/MiyeongEom/NetworkGameProgramming/assets/112458035/e3eaf7cb-93b5-4442-9004-4241ac3cd771)  
 
+---  
   
 ##### 서버 함수
 * socket() -> 소켓 생성
@@ -76,6 +77,7 @@ int accept(
 );   // 성공: 0, 실패: SOCKET_ERROR
 ```
 
+---   
    
 ##### 클라이언트 함수
 
@@ -96,7 +98,8 @@ int connect(
   int namelen                    // 소켓 주소 구조체 변수의 길이 대입 (바이트 단위)
 );   // 성공: 0, 실패: SOCKET_ERROR
 ```
-  
+
+---   
   
 ##### 데이터 전송 함수 (중요)  
 ![image](https://github.com/MiyeongEom/NetworkGameProgramming/assets/112458035/1e608bac-c17c-49f0-abc3-92b9c853f8ee)  
@@ -108,7 +111,8 @@ int connect(
 * non-blocking (send함수 여러번 불러야 할 수도) : 남은 공간만큼 잘라서 보냄
 *  tcp -> 운영체제가 송신 버퍼에서 상대 수신버퍼로  데이터를 보내고(송신버퍼에 무언가 남음)
 *  상대 수신버퍼가 잘못되었다 사인하면 다시보내달라고 요청, 잘보냈다고 해야 송신버퍼에 남아있던게 없어짐.  
-  
+
+   
 * send() 함수   // 성공:보낸 바이트수, 실패:SOCKET_ERROR
  * 애플리케이션 데이터를 송신 버퍼에 복사함으로써 궁극적으로 하부 프로토콜(ex) TCP/IP)에 의해 데이터가 전송되게 함
  * send( )함수가 성공했다고 실제 데이터 전송이 완료된 것은 아님
@@ -123,6 +127,7 @@ int send(
   int flags            // send함수의 동작을 바꿈, 대부분 0
 );   
 ```
+
   
   
 * recv( )함수  // 성공: 받은 바이트 수 또는 0, 실패: SOCKET_ERROR
