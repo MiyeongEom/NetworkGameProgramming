@@ -45,7 +45,7 @@
 ![image](https://github.com/MiyeongEom/NetworkGameProgramming/assets/112458035/4b4b2060-fc6d-49bd-b23e-5cf8bfac2ff3)  
 
 
-###### bind() 함수  // 성공: 0, 실패: SOCKET_ERROR
+##### bind() 함수  // 성공: 0, 실패: SOCKET_ERROR
  * 서버의 지역 IP주소와 지역 포트 번호를 결정하는 역할
    
 ```C
@@ -56,7 +56,7 @@ int bind(
 );   // 성공: 0, 실패: SOCKET_ERROR
 ```
 
-###### listen() 함수  // 성공: 0, 실패: SOCKET_ERROR
+##### listen() 함수  // 성공: 0, 실패: SOCKET_ERROR
  * 소켓과 결합된 TCP포트 상태를 listening으로 바꾸는 역할
    
 ```C
@@ -66,7 +66,7 @@ int listen(
 );   // 성공: 0, 실패: SOCKET_ERROR
 ```
 
-###### accept() 함수  // 성공: 0, 실패: INVALID_ERROR
+##### accept() 함수  // 성공: 0, 실패: INVALID_ERROR
  * 서버에 접속한 클라와 통신할 수 있도록 새로운 소켓 생성해 리턴, 접속한 크라 ip주소와 포트번호 알려줌
    
 ```C
@@ -87,7 +87,7 @@ int accept(
 * closesocket() -> 소켓닫기  
 
   
-###### connect() 함수  // 성공: 0, 실패: SOCKET_ERROR
+##### connect() 함수  // 성공: 0, 실패: SOCKET_ERROR
  * 클라이언트 서버 접속해 TCP 프로토콜 수준의 연결 이루어지게 함
  * 이를 호출하면 운영체제는 자동으로 지역 IP 주소와 지역 포트 번호를 설정함
    
@@ -113,7 +113,7 @@ int connect(
 *  상대 수신버퍼가 잘못되었다 사인하면 다시보내달라고 요청, 잘보냈다고 해야 송신버퍼에 남아있던게 없어짐.  
 
    
-###### send() 함수   // 성공:보낸 바이트수, 실패:SOCKET_ERROR
+##### send() 함수   // 성공:보낸 바이트수, 실패:SOCKET_ERROR
  * 애플리케이션 데이터를 송신 버퍼에 복사함으로써 궁극적으로 하부 프로토콜(ex) TCP/IP)에 의해 데이터가 전송되게 함
  * send( )함수가 성공했다고 실제 데이터 전송이 완료된 것은 아님
  * 블로킹(blocking) 소켓 : send( )함수를 호출할 때, 송신 버퍼의 여유 공간이 send( )함수의 세 번째 인자인 len보다 작을 경우 해당 프로세스는 대기 상태(wait state)가 된다. 송신 버퍼에 충분한 공간이 생기면 프로세스는 깨어나고, len크기만큼 데이터 복사가 이루어진 후 send( )함수가 리턴한다.
@@ -130,7 +130,7 @@ int send(
 
   
   
-###### recv( )함수  // 성공: 받은 바이트 수 또는 0, 실패: SOCKET_ERROR
+##### recv( )함수  // 성공: 받은 바이트 수 또는 0, 실패: SOCKET_ERROR
  * 수신 버퍼에 도착한 데이터를 애플리케이션 버퍼로 복사하는 역할을 한다
   
 ```C
