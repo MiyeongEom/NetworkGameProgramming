@@ -17,7 +17,7 @@
   * 두 클라가 접속한 상태면, 서버측에는 3개의 소켓이 존재. 이 중 2개의 소켓이 실제 클라와 통신하는 용도
   * 서버측 소켓과 클라측 소켓이 1대1로 대응. 한 클라가 두 개 이상의 소켓을 사용해 서버 접속도 가능함
   
-  [사진참고]([http://github.com "깃허브"](https://github.com/MiyeongEom/NetworkGameProgramming/blob/main/Theory/05_picture.md)
+  [사진참고](https://github.com/MiyeongEom/NetworkGameProgramming/blob/main/Theory/05_picture.md)
 
 * 간단한 클라이언트 예제
   
