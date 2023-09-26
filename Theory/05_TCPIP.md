@@ -23,4 +23,14 @@
   
   ![image](https://github.com/MiyeongEom/NetworkGameProgramming/assets/112458035/d22b025e-4009-4760-94f3-b70a94055a24)
   
-  [기본코드](https://github.com/MiyeongEom/NetworkGameProgramming/tree/main/Example/Network06_TcpIp/%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0)
+  [기본코드](https://github.com/MiyeongEom/NetworkGameProgramming/tree/main/Example/Network06_TcpIp/%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0)  
+  
+* TCP 서버/클라이언트 분석
+ * 프로토콜 : 소켓을 생성할 때 결정된다
+ * 지역 IP주소와 지역 포트 번호 : 서버 또는 클라이언트 자신의 주소를 의미
+ * 원격 IP주소와 우너격 포트 번호 : 서버 또는 클라이언트가 통신하는 상대의 주소 의미
+ ![image](https://github.com/MiyeongEom/NetworkGameProgramming/assets/112458035/e3eaf7cb-93b5-4442-9004-4241ac3cd771)
+
+  
+* 서버 함수
+  
