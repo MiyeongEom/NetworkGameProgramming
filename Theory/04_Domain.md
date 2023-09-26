@@ -32,3 +32,5 @@ struct hostent {
 typedef struct hostent HOSTENT;
 ```
 
+![image](https://github.com/MiyeongEom/NetworkGameProgramming/assets/112458035/1886b48f-175b-4d66-9a47-27b56c320f07)
+
