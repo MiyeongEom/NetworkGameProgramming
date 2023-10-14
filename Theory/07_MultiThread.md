@@ -61,7 +61,7 @@
   
 * 윈도우에서의 스레드 생성 : CreateThread()함수 사용, 스레드 핸들을 리턴함.  
   
-```C
+```CPP
 HANDLE CreateThread(
   LPSECURITY_ATTRIBUTES lpThreadAttributes,   
   // SECURITY_ATTRIBUTES 구조체 변수의 주소값 (핸들 상속과 보안 디스크립터 정보 전달 용도)
@@ -83,7 +83,7 @@ HANDLE CreateThread(
 * 일반적으로 1 / 2에 의해 스레드가 종료됨. 3은 극단적 경우, 4는 주 스레드의 특성
 * 3의 극단적인 경우 : 외부에서 스레드를 종료하고자 하는 경우  
   
-```C
+```CPP
 void ExitThread(
   DWORD dwExitCod   // 종료코드
 );
@@ -127,7 +127,7 @@ int GetThreadPriority(
   * 때로는 스레드가 작업을 완료하고 종료했는지의 여부를 확인해야 할 상황이 존재
   * 특정 스레드 종료 확인은 WaitForSingleObject, 다수의 스레드 확인은 WaitForMultipleObjects.  
   
-```C
+```CPP
 DWORD WaitForSingleObject(
   HANDLE hHandle,        // 종료 기다릴 스레드 핸들
   DWORD dwMilliseconds   // 대기 시간으로 밀리초 사용, INFINITE값을 사용시 스레드 종료 때까지 무한 대기
@@ -147,7 +147,7 @@ DWORD WiatForMultipleObjects(
   * 중지횟수가 0보다 크면 스레드 실행이 중지된다.
   * Sleep() : 스레드가 실행을 멈추고 일정 시간 대기하도록 함. 지정한 시간이 지나야 깨어남.  
   
-```C
+```CPP
 DWORD SuspendThread(
   HANDLE hThread // 스레드 핸들
 ); // 성공: 중지 횟수 + 1, 실패:-1
